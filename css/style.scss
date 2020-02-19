@@ -1,6 +1,38 @@
 body,html{
 	background: #ddd;
 }
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 8.726vw, 0);
+		-ms-transform: translate3d(0, 8.726vw, 0);
+		transform: translate3d(0, 8.726vw, 0)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none
+	}
+}
+@keyframes block2slideDown {
+	0% {
+		transform: translate(0, -100%)
+	}
+	100% {
+		transform: translate(0, 0)
+	}
+}
+@keyframes block2slideUp {
+	0% {
+		transform: translate(0, 100%)
+	}
+	100% {
+		transform: translate(0, 0)
+	}
+}
+
 .wapper{
 	.map-img{
 		position: relative;
@@ -36,6 +68,92 @@ body,html{
 		        animation: StrokeLine 3s infinite linear;
 		    }
 
+		}
+	}
+}
+
+.block2 {
+    overflow: hidden;
+	position: relative;
+	padding: 5vw 0vw;
+	.block2__background-wrap{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		.block2__background {
+			width: 100%;
+			height: 100%;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -9999;
+		}
+		.active{
+			position: relative;
+			z-index: 1;
+		}
+		.block2slideDown{
+			animation: block2slideDown 1s both;
+		}
+		.block2slideUp {
+			animation: block2slideUp 1s both
+		}
+	}
+	.block2__container {
+		position: relative;
+		z-index: 1;
+		width: 37%;
+		margin-left: auto;
+		margin-right: 0;
+		padding-left: 30px;
+		padding-right: 30px;
+		min-height: 40vw;
+		.block2__tab-menu-wrap {
+			width: 100%;
+			display: flex;
+			.block2__tab-menu {
+				flex: 1;
+				font-size: 1vw;
+				color: #fff;
+				text-transform: uppercase;
+				white-space: nowrap;
+				text-align: center;
+				padding-top: .65445vw;
+				padding-bottom: .65445vw;
+				cursor: pointer;
+				background: #52c8d3;
+				background: linear-gradient(180deg,#52c8d3 0,#24929d 100%);
+			}
+			.active{
+				background: #ebca74;
+				background: linear-gradient(90deg,#ebca74 0,#d3a956 100%);
+				color: #003739;
+			}
+		}
+		.block2__content-wrap{
+			.block2__content {
+				color: #fff;
+				visibility: hidden;
+				opacity: 0;
+				z-index: -9999;
+				position: absolute;
+			}
+			.active{
+				position: relative;
+				visibility: visible;
+				opacity: 1;
+				z-index: 1;
+			}
+			.fadeInUp{
+				-webkit-animation-name: fadeInUp;
+				animation-name: fadeInUp;
+				animation-duration: 1s;
+				animation-fill-mode: forwards
+			}
 		}
 	}
 }
