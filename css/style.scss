@@ -52,6 +52,15 @@ body,html{
 	}
 }
 
+@keyframes DrawStroke1 {
+	0% {
+		stroke-dashoffset: 3000
+	}
+	100% {
+		stroke-dashoffset: 0
+	}
+}
+
 .wapper{
 	.map-img{
 		position: relative;
@@ -228,6 +237,37 @@ body,html{
 						border-radius: 50%;
 					}
 				}
+			}
+		}
+	}
+	.thub{
+		.mask-animate{
+			svg{
+				opacity: 0;
+				width: 100%;
+				height: 100%;
+				mix-blend-mode: overlay;
+				position: absolute;
+				top: 0;
+				left: 0;
+				.ani-text{
+					fill-opacity: 0;
+					stroke-width: 2;
+					stroke-dasharray: 3000;
+					stroke-dashoffset: 3000;
+					stroke: #fff;
+				}
+				.moving{
+					animation-name: DrawStroke1;
+					animation-duration: 3s;
+					animation-fill-mode: forwards;
+					fill-opacity: 1;
+					stroke-opacity: 0;
+					transition: all .8s ease 1.5s;
+				}
+			}
+			.moving{
+				opacity: 1;
 			}
 		}
 	}

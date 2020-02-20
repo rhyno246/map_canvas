@@ -111,7 +111,16 @@
 	<div class="block5 pt-5 pb-5" id="block5">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6"></div>
+				<div class="col-md-6">
+					<div class="thub">
+						<img class="img-fluid" src="images/t2.jpg" alt="">
+						<div class="mask-animate">
+							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 400 400" class="svg" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+								<path fill="#4b9daf" class="ani-text" d="M315.8,172.2v62.1H129v94.6h209.3V391H61.8V10.5h276.4v62.1H129v99.6H315.8z"></path>
+								</svg>
+						</div>
+					</div>
+				</div>
 				<div class="col-md-6">
 					<div class="block5b__building-bg">
 						<div class="block3__number-list click-menu-action block5b__change">
@@ -196,8 +205,12 @@
 		$(window).on("load", function () {
 			lazyLoadImage();
 			initBlock2ActiveTab();
+
+			$('.ani-text').addClass('moving');
+			$('.svg').addClass('moving');
 		});
 	</script>
+
 </body>
 
 </html>
