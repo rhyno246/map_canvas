@@ -1,356 +1,385 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="vendor/animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title></title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/animation.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <!-- test css bem -->
+    <div class="info">
+      <div class="info__title">Man Nguyen</div>
+      <div class="info__description">
+        <p>asoihfoisdyhfoisdhoifdhodshf</p>
+      </div>
+    </div>
 
-<body>
+    <div class="banner">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/10/24/10/30/business-2884023_960_720.jpg"
+            alt="images not found"
+          />
+          <div class="cover">
+            <div class="container">
+              <div class="header-content">
+                <div class="line"></div>
+                <h2>Teimagine Digital Experience with</h2>
+                <h1>Start-ups and solutions</h1>
+                <h4>
+                  We help entrepreneurs, start-ups and enterprises shape their
+                  ideas into products
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg"
+            alt="images not found"
+          />
+          <div class="cover">
+            <div class="container">
+              <div class="header-content">
+                <div class="line animated bounceInLeft"></div>
+                <h2>Reimagine Digital Experience with</h2>
+                <h1>Intelligent solutions</h1>
+                <h4>
+                  We help entrepreneurs, start-ups and enterprises shape their
+                  ideas into products
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wapper pt-5">
+      <div class="container">
+        <div class="map-img">
+          <img src="images/map-dot.svg" alt="" class="img-fluid img-dot" />
+          <img src="images/map.svg" alt="" class="img-fluid" />
 
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1501 998.2">
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_2-2" data-name="Layer 2">
+                <path
+                  class="cls-2 st-line"
+                  d="M265.5,445.55,395.55,425.8l65.85-160,67.9-63.19,103.9,98.72,32.36,87.13L662.61,501.6l2.95,25.56L724,589.45,778.3,837.8l-4,36,69.1,17L930.7,923s66.8,26.24,101.3,25.8,86.6-14.88,86.6-14.88L1184,907s38.54-20.07,62.54-31.35,50.8-29.75,65.4-9.85,91.93,131.9,91.93,131.9"
+                />
+              </g>
+            </g>
+          </svg>
 
+          <!-- <svg
+            id="Layer_1"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1501 1001"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #fff;
+                }
 
+                .cls-1,
+                .cls-2 {
+                  stroke-miterlimit: 10;
+                }
 
-	<!-- test css bem -->
-	<div class="info">
-		<div class="info__title">Man Nguyen</div>
-		<div class="info__description">
-			<p>
-				asoihfoisdyhfoisdhoifdhodshf
-			</p>
-		</div>
-	</div>
+                .cls-2 {
+                  fill: none;
+                }
+              </style>
+            </defs>
+            <title>map1</title>
+            <polyline
+              class="cls-1 st-line"
+              points="614.5 48.5 639.5 71.5 645.5 85.5 645.5 96.5 527.5 203.5 499.5 178.5 633.5 302.5 678.5 217.5"
+            />
+            <path class="cls-1 st-line" d="M645.5,96.5l33,121" />
+            <path
+              class="cls-1 st-line"
+              d="M527.5,203.5l-63,59-24,52-32-18,111,63v102l-126-3,7-29,40-115"
+            />
+            <polyline
+              class="cls-1 st-line"
+              points="519.5 461.5 664.5 466.5 742.5 468.5 1052.5 555.5 1071.5 560.5 1093.5 560.5 1194.5 541.5"
+            />
+            <rect class="cls-2" x="0.5" y="0.5" width="1500" height="1000" />
+          </svg> -->
+        </div>
+      </div>
+    </div>
+    <div class="wapper-tabs block2" id="block2">
+      <div class="block2__background-wrap">
+        <img
+          class="block2__background block2__tab block2__tab1 show-pc"
+          data-src="images/1.jpg"
+        />
+        <img
+          class="block2__background block2__tab block2__tab1 show-mobile"
+          data-src="images/1.jpg"
+        />
+        <!-- thay hinh mobile -->
+        <img
+          class="block2__background block2__tab block2__tab2 show-pc"
+          data-src="images/2.jpg"
+        />
+        <img
+          class="block2__background block2__tab block2__tab2 show-mobile"
+          data-src="images/2.jpg"
+        />
+      </div>
+      <div class="block2__container">
+        <div class="block2__tab-menu-wrap">
+          <div
+            class="block2__tab-menu block2__tab block2__tab1 active"
+            data-tab="1"
+          >
+            Giới thiệu dự án
+          </div>
+          <div class="block2__tab-menu block2__tab block2__tab2" data-tab="2">
+            Quy mô dự án
+          </div>
+        </div>
+        <div class="block2__content-wrap">
+          <div class="block2__content block2__tab block2__tab1 active">
+            <div class="block2__content-text">
+              <ul style="list-style-type: disc">
+                <li>Mong Chuyen Man Minh</li>
+                <li>Mong Chuyen Man Minh</li>
+                <li>Mong Chuyen Man Minh</li>
+                <li>Mong Chuyen Man Minh</li>
+                <li>Mong Chuyen Man Minh</li>
+              </ul>
+            </div>
+          </div>
+          <div class="block2__content block2__tab block2__tab2">
+            <div class="block2__content-text">
+              <ul style="list-style-type: disc">
+                <li>Mong Chuyen Man Minh</li>
+                <li>Mong Chuyen Man Minh</li>
+                <li>Mong Chuyen Man Minh</li>
+                <li>Mong Chuyen Man Minh</li>
+                <li>Mong Chuyen Man Minh</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="block5 pt-5 pb-5" id="block5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="thub">
+              <img class="img-fluid" src="images/t2.jpg" alt="" />
+              <div class="mask-animate">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 400 400"
+                  class="svg"
+                  style="transform: matrix(1, 0, 0, 1, 0, 0)"
+                >
+                  <path
+                    fill="#4b9daf"
+                    class="ani-text"
+                    d="M315.8,172.2v62.1H129v94.6h209.3V391H61.8V10.5h276.4v62.1H129v99.6H315.8z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="block5b__building-bg">
+              <div
+                class="block3__number-list click-menu-action block5b__change"
+              >
+                <div class="block3__number-item">
+                  <span class="circle"></span>
+                </div>
+              </div>
+              <div class="img text-right">
+                <img
+                  class="img-fluid"
+                  src="images/block5b_building.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div data-splitting><h2>gsap + splitting.js</h2></div>
 
+    <div class="name">Mong Chuyen Man Minh</div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="vendor/Draggable.min.js"></script>
+    <script src="vendor/ThrowPropsPlugin.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="vendor/animate.js"></script>
 
+    <script src="vendor/jquery.lettering.js"></script>
+    <script src="vendor/jquery.textillate.js"></script>
 
-	<div class="banner">
-		<div class="owl-carousel owl-theme">
-			<div class="item">
-				<img src="https://cdn.pixabay.com/photo/2017/10/24/10/30/business-2884023_960_720.jpg"
-					alt="images not found">
-				<div class="cover">
-					<div class="container">
-						<div class="header-content">
-							<div class="line"></div>
-							<h2>Teimagine Digital Experience with</h2>
-							<h1>Start-ups and solutions</h1>
-							<h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg"
-					alt="images not found">
-				<div class="cover">
-					<div class="container">
-						<div class="header-content">
-							<div class="line animated bounceInLeft"></div>
-							<h2>Reimagine Digital Experience with</h2>
-							<h1>Intelligent solutions</h1>
-							<h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <script>
+      $(document).ready(function () {
+        Splitting();
+        TweenMax.staggerFrom(
+          ".char",
+          1.3,
+          {
+            y: 70,
+            rotation: 90,
+            rotationX: -50,
+            opacity: 0,
+            transformOrigin: "50% 50%",
+            ease: Back.easeInOut.config(1.7),
+          },
+          0.05
+        );
+      });
+    </script>
 
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".name").textillate({
+          in: {
+            effect: "flipInX",
+          },
+          out: {
+            effect: "bounceOut",
+          },
+          loop: true,
+        });
+      });
+    </script>
 
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: false,
+        nav: true,
+        mouseDrag: false,
+        autoplay: true,
+        animateOut: "slideOutUp",
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
 
-	<div class="wapper pt-5">
-		<div class="container">
-			<div class="map-img">
-				<img src="images/map-dot.svg" alt="" class="img-fluid img-dot">
-				<img src="images/map.svg" alt="" class="img-fluid">
-				<!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1500 1000">
-					<path class="st-line" d="M405,461.1l26.7-2l0.5,0l311.3,9.2c0.2,0,0.9,0.3,1.1,0.3c12.5,3.4,128.9,35,215.6,59.2
-					c40.7,11.4,74.8,21.1,88.1,25.4c2.9,1,5.5,1.8,7.6,2.4c11.2,3.5,20.6,4.7,28,4.8c8.6,0.1,14.2-1.3,16.5-1.9c0.2-0.1,1-0.4,1.3-0.5
-					c0.2,0,0.9-0.2,1.1-0.2c0.4-0.1,1.9-0.5,2.2-0.6l92.7-16.1"></path>
-					<polyline class="st-line" points="703.6,44.2 705.6,46.8 765.2,125.7 877.5,162.7 1111.3,405.7 1135.9,614.9 1400.4,995.9 "></polyline>
-					<polyline class="st-line1" points="1201.6,725.7 1005.6,795.1 951.7,536.4 "></polyline>
-				</svg> -->
-				<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1501 1001">
-					<defs>
-						<style>
-							.cls-1 {
-								fill: #fff;
-							}
+    <script>
+      var active = "active",
+        dataTabAttr = "data-tab",
+        block2TabClass = ".block2__tab",
+        animationDuration = 1000,
+        widthOfMobileScreen = 991,
+        widthOfScreen = $(window).outerWidth();
 
-							.cls-1,
-							.cls-2 {
-								stroke-miterlimit: 10;
-							}
+      function initBlock2ActiveTab() {
+        $(".block2__tab-menu").on("click", function () {
+          var tabId = $(this).attr(dataTabAttr);
+          block2ActiveTab(tabId);
+        });
+      }
+      function block2ActiveTab(tabId) {
+        var oldTabId = $(".block2__tab-menu.active").attr(dataTabAttr);
+        $(block2TabClass).removeClass(active);
+        $(block2TabClass + tabId).addClass(active);
+        if (+oldTabId > +tabId) {
+          addAnimationBackground(tabId, oldTabId, "block2slideDown");
+          addAnimationContent(tabId, oldTabId, "animated fadeInUp");
+        } else {
+          addAnimationBackground(tabId, oldTabId, "block2slideUp");
+          addAnimationContent(tabId, oldTabId, "animated fadeInUp");
+        }
+      }
+      function addAnimationBackground(tabId, oldTabId, animation) {
+        var el = $(".block2__background" + block2TabClass + tabId);
+        var oldEl = $(".block2__background" + block2TabClass + oldTabId);
+        el.addClass(animation);
+        oldEl.addClass("is-animating"); // giu cho hinh cu khong bi bien mat khi hinh moi dang chay de len
+        setTimeout(function () {
+          el.removeClass(animation);
+          oldEl.removeClass("is-animating");
+        }, animationDuration);
+      }
+      function lazyLoadImage() {
+        console.log($(window).outerWidth());
+        if ($(window).outerWidth() < 992) {
+          $("img:not(.show-pc)").each(function (image) {
+            console.log(image);
+            var src = $(this).attr("data-src");
+            $(this).attr("src", src);
+          });
+        } else {
+          $("img:not(.show-mobile)").each(function (image) {
+            var src = $(this).attr("data-src");
+            $(this).attr("src", src);
+          });
+        }
+      }
+      function addAnimationContent(tabId, oldTabId, animation) {
+        var el = $(".block2__content" + block2TabClass + tabId);
+        el.addClass(animation);
+        setTimeout(function () {
+          el.removeClass(animation);
+        }, animationDuration);
+      }
+      $(window).on("load", function () {
+        lazyLoadImage();
+        initBlock2ActiveTab();
 
-							.cls-2 {
-								fill: none;
-							}
-						</style>
-					</defs>
-					<title>map1</title>
-					<polyline class="cls-1 st-line"
-						points="614.5 48.5 639.5 71.5 645.5 85.5 645.5 96.5 527.5 203.5 499.5 178.5 633.5 302.5 678.5 217.5" />
-					<path class="cls-1 st-line" d="M645.5,96.5l33,121" />
-					<path class="cls-1 st-line" d="M527.5,203.5l-63,59-24,52-32-18,111,63v102l-126-3,7-29,40-115" />
-					<polyline class="cls-1 st-line"
-						points="519.5 461.5 664.5 466.5 742.5 468.5 1052.5 555.5 1071.5 560.5 1093.5 560.5 1194.5 541.5" />
-					<rect class="cls-2" x="0.5" y="0.5" width="1500" height="1000" />
-				</svg>
-			</div>
-		</div>
-	</div>
-	<div class="wapper-tabs block2" id="block2">
-		<div class="block2__background-wrap">
-			<img class="block2__background block2__tab block2__tab1 show-pc" data-src="images/1.jpg" />
-			<img class="block2__background block2__tab block2__tab1 show-mobile" data-src="images/1.jpg" />
-			<!-- thay hinh mobile -->
-			<img class="block2__background block2__tab block2__tab2  show-pc" data-src="images/2.jpg" />
-			<img class="block2__background block2__tab block2__tab2  show-mobile" data-src="images/2.jpg" />
-		</div>
-		<div class="block2__container">
-			<div class="block2__tab-menu-wrap">
-				<div class="block2__tab-menu block2__tab block2__tab1 active" data-tab="1">
-					Giới thiệu dự án
-				</div>
-				<div class="block2__tab-menu block2__tab block2__tab2 " data-tab="2">
-					Quy mô dự án
-				</div>
-			</div>
-			<div class="block2__content-wrap">
-				<div class="block2__content block2__tab block2__tab1 active">
-					<div class="block2__content-text">
-						<ul style="list-style-type: disc;">
-							<li>Mong Chuyen Man Minh</li>
-							<li>Mong Chuyen Man Minh</li>
-							<li>Mong Chuyen Man Minh</li>
-							<li>Mong Chuyen Man Minh</li>
-							<li>Mong Chuyen Man Minh</li>
-						</ul>
-
-					</div>
-
-				</div>
-				<div class="block2__content block2__tab block2__tab2 ">
-					<div class="block2__content-text">
-						<ul style="list-style-type: disc;">
-							<li>Mong Chuyen Man Minh</li>
-							<li>Mong Chuyen Man Minh</li>
-							<li>Mong Chuyen Man Minh</li>
-							<li>Mong Chuyen Man Minh</li>
-							<li>Mong Chuyen Man Minh</li>
-						</ul>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-
-
-
-
-
-	<div class="block5 pt-5 pb-5" id="block5">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="thub">
-						<img class="img-fluid" src="images/t2.jpg" alt="">
-						<div class="mask-animate">
-							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 400 400" class="svg"
-								style="transform: matrix(1, 0, 0, 1, 0, 0);">
-								<path fill="#4b9daf" class="ani-text"
-									d="M315.8,172.2v62.1H129v94.6h209.3V391H61.8V10.5h276.4v62.1H129v99.6H315.8z">
-								</path>
-							</svg>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="block5b__building-bg">
-						<div class="block3__number-list click-menu-action block5b__change">
-							<div class="block3__number-item">
-								<span class="circle"></span>
-							</div>
-						</div>
-						<div class="img text-right">
-							<img class="img-fluid" src="images/block5b_building.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div data-splitting><h2>gsap + splitting.js</h2></div>
-
-
-
-	<div class="name">
-		Mong Chuyen Man Minh
-	</div>	
-
-
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script src="vendor/Draggable.min.js"></script>
-	<script src="vendor/ThrowPropsPlugin.min.js"></script>
-	<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-	<script src="vendor/animate.js"></script>
-
-	<script src="vendor/jquery.lettering.js"></script>
-	<script src="vendor/jquery.textillate.js"></script>
-
-
-	<script>
-		$(document).ready(function(){
-			Splitting();
-			TweenMax.staggerFrom('.char', 1.3, 
-				{
-					y: 70,rotation:90,rotationX:-50, opacity: 0,transformOrigin:"50% 50%", ease: Back.easeInOut.config(1.7)
-				}, 0.05);
-		});
-	</script>
-
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('.name').textillate({
-				in:{
-					effect: 'flipInX'
-				},
-				out: {
-					effect: 'bounceOut'
-				},
-				loop: true
-			});
-		});
-	</script>
-
-
-
-
-
-	<script>
-		$('.owl-carousel').owlCarousel({
-			loop: true,
-			margin: 10,
-			dots: false,
-			nav: true,
-			mouseDrag: false,
-			autoplay: true,
-			animateOut: 'slideOutUp',
-			responsive: {
-				0: {
-					items: 1
-				},
-				600: {
-					items: 1
-				},
-				1000: {
-					items: 1
-				}
-			}
-		});
-	</script>
-
-
-
-
-
-	<script>
-		var active = 'active',
-			dataTabAttr = 'data-tab',
-			block2TabClass = '.block2__tab',
-			animationDuration = 1000,
-			widthOfMobileScreen = 991,
-			widthOfScreen = $(window).outerWidth();
-
-		function initBlock2ActiveTab() {
-			$(".block2__tab-menu").on("click", function () {
-				var tabId = $(this).attr(dataTabAttr);
-				block2ActiveTab(tabId);
-			});
-		}
-		function block2ActiveTab(tabId) {
-			var oldTabId = $(".block2__tab-menu.active").attr(dataTabAttr);
-			$(block2TabClass).removeClass(active);
-			$(block2TabClass + tabId).addClass(active);
-			if (+oldTabId > +tabId) {
-				addAnimationBackground(tabId, oldTabId, 'block2slideDown');
-				addAnimationContent(tabId, oldTabId, 'animated fadeInUp');
-			} else {
-				addAnimationBackground(tabId, oldTabId, 'block2slideUp');
-				addAnimationContent(tabId, oldTabId, 'animated fadeInUp');
-			}
-		}
-		function addAnimationBackground(tabId, oldTabId, animation) {
-			var el = $('.block2__background' + block2TabClass + tabId);
-			var oldEl = $('.block2__background' + block2TabClass + oldTabId);
-			el.addClass(animation);
-			oldEl.addClass('is-animating'); // giu cho hinh cu khong bi bien mat khi hinh moi dang chay de len
-			setTimeout(function () {
-				el.removeClass(animation);
-				oldEl.removeClass('is-animating');
-			}, animationDuration)
-		}
-		function lazyLoadImage() {
-			console.log($(window).outerWidth());
-			if ($(window).outerWidth() < 992) {
-				$("img:not(.show-pc)").each(function (image) {
-					console.log(image);
-					var src = $(this).attr("data-src");
-					$(this).attr("src", src);
-				});
-			} else {
-				$("img:not(.show-mobile)").each(function (image) {
-					var src = $(this).attr("data-src");
-					$(this).attr("src", src);
-				});
-			}
-		}
-		function addAnimationContent(tabId, oldTabId, animation) {
-			var el = $('.block2__content' + block2TabClass + tabId);
-			el.addClass(animation);
-			setTimeout(function () {
-				el.removeClass(animation);
-			}, animationDuration)
-		}
-		$(window).on("load", function () {
-			lazyLoadImage();
-			initBlock2ActiveTab();
-
-			$('.ani-text').addClass('moving');
-			$('.svg').addClass('moving');
-		});
-	</script>
-	
-
-
-
-
-</body>
-
+        $(".ani-text").addClass("moving");
+        $(".svg").addClass("moving");
+      });
+    </script>
+  </body>
 </html>
